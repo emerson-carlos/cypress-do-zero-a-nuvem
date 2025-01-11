@@ -147,7 +147,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
   it('acessa a página da política de privacidade removendo o target e então clicando no link', ()=> {
     cy.get('div[id="privacy"] a').as('politicaPrivacidade').invoke('removeAttr', 'target')
     cy.get('@politicaPrivacidade').click()
-    cy.title().should('be.equal', 'Central de Atendimento ao Cliente TAT - Política de Privacidad')
+    cy.title().should('be.equal', 'Central de Atendimento ao Cliente TAT - Política de Privacidade')
   })
   
 })
